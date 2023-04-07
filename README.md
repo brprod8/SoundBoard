@@ -1,12 +1,30 @@
 ![](resource/Sound.png)
 
 # Getting Started
-This is a space-themed soundboard designed to play various `sound effects` upon button clicks. The soundboard is built using HTML, CSS, and JavaScript. 
+Space Soundboard is a simple web application that allows you to play `space-themed` sound effects and music. It features three tracks that you can play, a volume slider, mute button, loop button, and stop button.
 
 > To use the Space Soundboard, simply click on any of the buttons to play the corresponding sound effect. 
 
 # Design
 The Space Soundboardfeatures a modern and sleek design with a dark color scheme and animated space-themed buttons. The buttons are animated to move slowly when the cursor is not hovering over them and to move faster when the cursor hovers over them. The title text is also animated with a shaking effect.
+
+# Usage
+Click on one of the play buttons to start playing a track.
+Use the volume slider to adjust the volume of the track.
+Click the mute button to mute the track. Click it again to unmute.
+Click the loop button to loop the track. Click it again to unloop.
+Click the stop button to stop the currently playing track.
+
+Sure, here's a sample README file for the Space Soundboard project:
+
+Space Soundboard
+Space Soundboard is a simple web application that allows you to play space-themed sound effects and music. It features three tracks that you can play, a volume slider, mute button, loop button, and stop button.
+
+
+# Technologies Used
+* HTML
+* CSS
+* JavaScript
 
 
 # Contributing
