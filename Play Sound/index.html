@@ -7,17 +7,55 @@
   </head>
   <body>
     <div class="container">
+      <!-- Page title -->
       <h1>Space Soundboard</h1>
+
+      <!-- Audio display -->
       <div class="audio-display">
         <span class="audio-text">Currently playing:</span>
         <span id="audio-name"></span>
       </div>
-      <button id="play-button">UAT Space Program</button>
-      <button id="play-button-2">Alien</button>
-      <button id="play-button-3">Space Junk</button>
-      <button id="stop-button" class="stop-button">Stop All Sounds</button>
-      <div id="track-list"></div>
+
+      <!-- Audio controls section -->
+      <div id="audio-controls">
+
+        <!-- Play buttons for each track -->
+        <button class="play-button" data-track-index="0">UAT Space Program</button>
+        <button class="play-button" data-track-index="1">Alien</button>
+        <button class="play-button" data-track-index="2">Space Junk</button>
+
+        <!-- Audio control row containing volume slider, mute button, loop button, and stop button -->
+        <div class="audio-controls-row">
+
+          <!-- Volume slider -->
+          <input type="range" id="volume-slider" min="0" max="100" value="50">
+
+          <!-- Mute button -->
+          <button id="mute-button" class="audio-control-button">Mute</button>
+
+          <!-- Loop button -->
+          <button id="loop-button" class="audio-control-button">Loop</button>
+
+
+
+        </div>
+      </div>
     </div>
+    <!-- JavaScript file -->
     <script src="Sound.js"></script>
-  </body>
-</html>
+
+    <script>
+      // Get references to the play buttons and stop button in the DOM
+      const playButtons = document.querySelectorAll('.play-button');
+      const stopButton = document.getElementById('stop-button');
+
+      // Add click event listeners to the play buttons and stop button
+      playButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const trackIndex = button.getAttribute('data-track-index');
+          playAudio(trackIndex);
+        });
+      });
+
+      
+    </script>
