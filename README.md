@@ -15,7 +15,7 @@ Click the mute button to mute the track. Click it again to unmute.
 Click the loop button to loop the track. Click it again to unloop.
 Click the stop button to stop the currently playing track.
 
-Sure, here's a sample README file for the Space Soundboard project:
+
 
 Space Soundboard
 Space Soundboard is a simple web application that allows you to play space-themed sound effects and music. It features three tracks that you can play, a volume slider, mute button, loop button, and stop button.
